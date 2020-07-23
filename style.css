@@ -63,15 +63,14 @@ body {
 .title-image h1 {
   margin: 0;
   color: red;
-  font-size: 50px;
-  /* cursor: pointer; */
-  transition-property: font-size;
-  transition-duration: 4s;
-  transition-delay: 2s;
+  font-size: 45px;
+  cursor: pointer;
+  transition: font-size, opacity 0.5s, 0.3s ease-in;
 }
 
 .title-image h1:hover {
   font-size: 75px;
+  opacity: 0.5;
 }
 
 /**
