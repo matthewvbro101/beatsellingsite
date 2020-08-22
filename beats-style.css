@@ -15,15 +15,14 @@ html {
     border-radius: 5px;
     background-color: #fafafa;
     transition: background-color 0.3s ease-in, border-color 0.3s ease-in;
-    transition: height 0.2s ease-in;
     position: relative;
   
     display: flex;
+    overflow: hidden;
   }
   .box:hover {
     background-color: #eee;
     border-color: transparent;
-    height: 150px;
   }
   
   .picture {
@@ -51,3 +50,25 @@ html {
     border-radius: 10px;
   }
 
+  /* align boxes */
+.all-wrap {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  height: 100vh;
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(255, 255, 255, 0.7);
+  opacity: 0;
+  transition: opacity 0.3s ease-in;
+}
+
+.box:hover .overlay {
+  opacity: 1;
+}
