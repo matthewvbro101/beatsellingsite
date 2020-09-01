@@ -9,7 +9,7 @@ html {
     width: 200px;
     height: 100px;
     border: 1px solid grey;
-    margin-top: 10px;
+    /* margin-top: 10px; */
     margin-right: 10px;
     cursor: pointer;
     border-radius: 5px;
@@ -42,20 +42,17 @@ html {
   .box .info .desc {
     font-size: 12px;
   }
-  /* title */
-  .bp-title {
-    text-align: center;
-    background-color: whitesmoke;
-    border-bottom: solid;
-    border-radius: 10px;
-  }
+/* nav */
+
+
 
   /* align boxes */
 .all-wrap {
   display: flex;
   flex-wrap: wrap;
   flex-direction: row;
-  height: 100vh;
+  height: 50vh;
+  position: relative;
 }
 
 .overlay {
@@ -71,4 +68,54 @@ html {
 
 .box:hover .overlay {
   opacity: 1;
+}
+
+.beat-title {
+  font-size: 30px;
+  color: black;
+  text-align: center;
+}
+
+.big-title {
+  text-align: center;
+  font-size: 30px;
+  color: black;
+}
+
+.play {
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  /* position: absolute; */
+}
+
+.purchase {
+  width: 100px;
+  height: 40px;
+  position: absolute;
+  top: 150px;
+  left: 75px;
+  border-radius: 5px;
+  background: red;
+  cursor: pointer;
+}
+
+.purchase:hover {
+  background-color: black;
+}
+
+.buy-wrap {
+  position: relative;
+}
+
+.buy {
+  /* position: absolute; */
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: white;
+  /* works for now (change) */
+  margin-top: 10px;
 }
