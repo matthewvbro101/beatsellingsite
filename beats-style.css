@@ -31,45 +31,37 @@ html {
   background-color: rgba(255, 255, 255, 0.7);
   opacity: 0;
   transition: opacity 0.2s ease-in;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .overlay:hover {
   opacity: 1;
 }
 
-.name {
-  position: absolute;
-  opacity: 1;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+.product-info .name {
+  font-weight: bold;
+  font-size: 20px;
 }
 
 .purchase{
   width: 100px;
   height: 40px;
-  background-color: black;
+  background-color: red;
   border-radius: 5px;
   cursor: pointer;
   color: white;
   float: left;
   margin-top: 50px;
-  margin-left: 62.5px;
+  margin-left: 75px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
 }
 
 .purchase:hover {
   background-color: black;
-}
-
-.buy {
-  position: absolute;
-  top: 0;
-  left: 0;
-  display: flex;
-  justify-content: center;
-  align-items: center;
 }
 
 .whole-wrap {
