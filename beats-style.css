@@ -68,11 +68,6 @@ html {
     background-color: rgba(0, 136, 169, 0.8);
   }
 
-.dk-title {
-  font-size: 20px;
-  text-align: center;
-}
-
 .all-wrap {
   position: relative;
   display: flex;
@@ -144,3 +139,38 @@ html {
   max-height: 100%;
 }
 
+.dk-options {
+  position: relative;
+  display: flex;
+  justify-content: center;
+  margin-bottom: 30px;
+}
+
+.the-wrap {
+  display: flex;
+  flex-direction: row;
+}
+
+.the-wrap li {
+  display: flex;
+  margin-left: 50px;
+  transition: opacity 0.3s ease;
+}
+
+.the-wrap li a {
+  text-decoration: none;
+}
+
+.the-wrap li:hover {
+  opacity: 0.4;
+}
+
+.dk-title {
+  font-size: 20px;
+  display: flex;
+  justify-content: center;
+}
+
+.genre-wrap {
+  margin-top: 30px;
+}
